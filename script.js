@@ -32,3 +32,18 @@ const filterProdukMahal = (produk) => {
 };
 
 console.log(filterProdukMahal(produk));
+
+// Jawaban Nomor 3
+const produkLama = [{ nama: "Roti", harga: 5000 }];
+const produkBaru = { nama: "Susu", harga: 12000 };
+
+const tambahProduk = (produkLama, produkBaru) => {
+  const hasil = [];
+  for (let i = 0; i < produkLama.length; i++) {
+    hasil.push(produkLama[i]);
+  }
+  hasil.push(produkBaru);
+  return hasil;
+};
+
+console.log(tambahProduk(produkLama, produkBaru));
