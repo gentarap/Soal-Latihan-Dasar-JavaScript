@@ -47,3 +47,15 @@ const tambahProduk = (produkLama, produkBaru) => {
 };
 
 console.log(tambahProduk(produkLama, produkBaru));
+
+// Jawaban Nomor 4
+const produk4 = [
+  { nama: "Teh", harga: 3000 },
+  { nama: "Kopi", harga: 4000 },
+];
+const cariProduk = (produk4, namaDicari) =>
+  produk4.find((item) => item.nama === namaDicari); //menggunakan Find()
+
+const hasil = cariProduk(produk4, "Kopi");
+
+console.log(hasil);
