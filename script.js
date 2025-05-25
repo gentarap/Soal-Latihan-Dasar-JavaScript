@@ -54,8 +54,22 @@ const produk4 = [
   { nama: "Kopi", harga: 4000 },
 ];
 const cariProduk = (produk4, namaDicari) =>
-  produk4.find((item) => item.nama === namaDicari); //menggunakan Find()
+  produk4.find((item) => item.nama === namaDicari); //menggunakan Find() untuk mengembalikan elemen pertama yang cocok dengan kondisi.
 
 const hasil = cariProduk(produk4, "Kopi");
 
 console.log(hasil);
+
+// Jawaban Nomor 5
+const produk5 = [
+  { nama: "Susu", jumlah: 2 },
+  { nama: "Keju", jumlah: 3 },
+];
+const totalJumlahProduk = (produk5) => {
+  let total = 0;
+  for (let i = 0; i < produk5.length; i++) {
+    total += produk5[i].jumlah;
+  }
+  return total;
+};
+console.log(totalJumlahProduk(produk5));
